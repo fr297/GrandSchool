@@ -1,0 +1,11 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass scss/styles.scss css/styles.css",
+    "scss:watch": "sass scss/styles.scss css/styles.css --watch"
+  },
+  "private": true
+}
