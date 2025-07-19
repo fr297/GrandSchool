@@ -377,7 +377,7 @@ body {
   width: 95%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0 44px;
+  padding: 0 25px;
 }
 
 /* Animation */
@@ -450,23 +450,28 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .headerWrapper {
+  padding-top: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
 }
-header .logo {
+header .headerWrapper .logo {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 175px;
   transition: all 1s ease;
 }
-header .logo:hover .computerLight, header .logo:focus-visible .computerLight {
+header .headerWrapper .logo:hover .computerLight, header .headerWrapper .logo:focus-visible .computerLight {
   -webkit-animation: blink-1 0.6s both;
   animation: blink-1 0.6s both;
 }
-header .helpBtn {
+header .headerWrapper .helpBtn {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -479,29 +484,25 @@ header .helpBtn {
   background-color: #618135;
   display: none;
 }
-header .helpBtn:hover {
+header .headerWrapper .helpBtn:hover {
   background-color: white;
   color: #618135;
 }
 
-.heroSection {
-  display: flex;
-  flex-direction: column;
+.hero {
   background-image: image-set(url("../img/background.webp") 1x, url("../img/backgroundRetina.webp") 2x);
   background-size: cover;
-  background-position: 25% 50%;
+  background-position: 65%;
   background-repeat: no-repeat;
-  padding-top: 35px;
   min-height: 100vh;
-}
-
-.hero {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 .hero .heroTitle {
-  margin: 125px 0 0 0;
+  margin: 0;
   line-height: 60px;
   font-size: 45px;
   font-weight: 600;
@@ -514,7 +515,7 @@ header .helpBtn:hover {
   margin-top: 10px;
   font-size: 22px;
   font-weight: 400;
-  width: 55%;
+  width: 45%;
   line-height: 30px;
   color: #484747;
 }
@@ -534,6 +535,14 @@ header .helpBtn:hover {
 .hero .changeCourse:hover {
   background-color: #618135;
   color: white;
+}
+
+.courseBlock {
+  padding: 100px 70px;
+}
+.courseBlock h2 {
+  font-weight: 600;
+  font-size: 36px;
 }
 
 /*# sourceMappingURL=styles.css.map */
