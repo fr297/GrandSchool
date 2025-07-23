@@ -1,16 +1,20 @@
 .courseBlock {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
   h2 {
     font-weight: 600;
     font-size: 36px;
   }
-  .courseBlockInfo {
+  .courses {
     @include flex;
     padding: 15px 0 35px 0;
     p {
       font-size: 22px;
       font-weight: 400;
       line-height: 141%;
+      color: #484747;
     }
     .buyAll {
       @include btnSettings;
