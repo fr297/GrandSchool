@@ -1,1 +1,70 @@
+.footer {
+  background-image: -webkit-image-set(
+    url("../img/footerbg.webp") 1x,
+    url("../img/footerbgretina.webp") 2x
+  );
+  background-image: image-set(
+    url("../img/footerbg.webp") 1x,
+    url("../img/footerbgretina.webp") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  padding: 0 0 30px 0;
+  p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .footerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 35px 0;
 
+    .footerText {
+      width: 35%;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 132%;
+    }
+  }
+}
+
+.footerSubtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 2px;
+    background-color: #fff;
+    top: 25px;
+  }
+}
+.contact {
+  .contactInfo {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 2px 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.followUs {
+  a {
+    text-decoration: none;
+    margin: 0 15px 0 0;
+  }
+}
