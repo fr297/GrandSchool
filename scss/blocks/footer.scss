@@ -56,15 +56,17 @@
     color: #fff;
     font-style: normal;
     margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
-  a {
+  .emailLink {
     text-decoration: none;
     font-weight: 400;
     color: #fff;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-
     gap: 7px;
     &:hover {
       color: #b2b2b2;
@@ -83,9 +85,24 @@
     }
   }
 }
+.locationIcon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+}
+.mailLinkIcon {
+  width: 19px;
+  height: 19px;
+  fill: #fff;
+  &:hover {
+    fill: #b2b2b2;
+  }
+}
 .icon {
   transition: all 0.3s ease;
   fill: #fff;
+  width: 45px;
+  height: 46px;
   &:hover {
     fill: #b2b2b2;
   }
